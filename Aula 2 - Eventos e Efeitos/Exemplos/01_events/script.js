@@ -5,7 +5,12 @@ $(document).ready(function() {
         //está sendo afetado pelo evento
         $(this).css({
         "background-color":"black",
+<<<<<<< HEAD
         "color": "white"
+=======
+        "color": "white",
+        "cursor": "pointer"
+>>>>>>> 46923755255cea6793aa5e7c488230d7f0c46e08
         })
     })
     $("h3").dblclick(function() {
