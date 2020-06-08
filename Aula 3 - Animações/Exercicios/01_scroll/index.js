@@ -10,3 +10,48 @@
 
 
 */
+console.log('oi')
+$(document).ready(function () {
+
+    $('.link1').click(function () {
+        $('html', 'body').animate({
+            scrollTop: $('#h1').offset().top
+        }, 2000);
+        console.log('clicado')
+    })
+
+    $('.link2').click(function () {
+        $('html', 'body').animate({
+            scrollTop: $('#h2').offset().top
+        }, 2000)
+        console.log('clicado')
+    })
+
+    $('.link3').click(function () {
+        $('html', 'body').animate({
+            scrollTop: $('#h3').offset().top
+        }, 2000)
+        console.log('clicado')
+    })
+
+    $(document).scroll(function () {
+
+        let position = $(this).scrollTop()
+
+        if(position > 10){
+            $('.scrollTop').css('opacity', '1')
+        }else{
+            $('.scrollTop').css('opacity', '0')
+        }
+
+        $('.scrollTop').click(function(){
+
+            $('html', 'body').animate({
+                scrollTop: '0'
+            }, 1000)
+        })
+
+    })
+})
+
+
